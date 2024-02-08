@@ -1,0 +1,31 @@
+
+<div class=".editTask-container mat-elevation-z2">
+    <div class="header">
+        <h4 matBadgeSize="small" MatBadgePosition="after" matBadge="{{taskItem.estimatedTime}}" matBadgeColor="warn"><span class="taskClass">{{taskItem.task}}</span></h4>
+    </div>
+</div>
+<form class="task-form" [formGroup]="editTaskFormGroup" (ngSubmit)="onSubmit()">
+    <div class="container-time-taken">    
+    <mat-form-field class="small-one">
+        <mat-label>Time taken</mat-label>
+        <input formControlName="timeActual" type="number" min="0" max="999999" matInput
+            placeholder="timeActual">       
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="status">
+          <mat-option *ngFor="let item of taskStatus"
+           [value]="item">{{item}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="notes">
+    <mat-form-field class="notes">
+        <mat-label>Notes</mat-label>
+        <textarea #comments rows="4" formControlName="notes" matInput placeholder="..."></textarea>
+        <mat-hint>{{comments.value.length}}/100</mat-hint>
+    </mat-form-field>
+</div>
+    <button type="submit" class="submitButton" color="warn" [disabled]="!editTaskFormGroup.valid"
+    mat-raised-button>Save Task</button>
+</form>

@@ -1,0 +1,30 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.my-card{
+    max-width: 400px;
+    min-width: 300px;
+    background-color: #344C75ff;
+}
+.certifications{
+    background-color: rgb(251, 183, 183);
+}
+.family{
+    background-color:rgb(240, 140, 240);
+}
+.health{
+    background-color: rgb(183, 243, 183);
+}
+.miscellaneous, .self_improvement, .interview_prep{
+    background-color: rgb(246, 205, 155);
+}
+.job-search{
+    background-color: blanchedalmond;
+}
+.work{
+    background-color: skyblue;
+} 
+.mat-badge-content {
+    background: red;
+    color: blue;
+}

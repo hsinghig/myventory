@@ -1,0 +1,22 @@
+.editTask-container{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.container-time-taken{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.small-one {
+    max-width: 140px;
+}
+.notes {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.taskClass{
+    font-style: italic;
+}

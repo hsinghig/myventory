@@ -1,0 +1,23 @@
+.task-parent-container{
+    background-color:aliceblue;
+    min-width: 200px;
+    min-height: 200px;
+  }
+  .card{
+    max-width: 400px;
+    min-width:400px;
+  }
+  .health{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .myClass{ 
+    font-size: 1.4em;
+    color: green;  
+    text-align: center;
+  }
+  .walk{
+    color:#C62828;
+  }
