@@ -9,7 +9,8 @@
         <hr/>   
         <mat-card-content class="my-content mat-elevation-z8">
            <div *ngFor="let item of taskList">
-              <p (click)="showItemDetail(item)" [ngClass]="getStyle(item)" matBadgeSize="small" matBadge="{{item.estimatedTime}}" matBadgeColor="warn">{{item.task}}</p>
+            <app-single-task (sendBack)="cameFromChild($event)" [taskItem]="item"></app-single-task>
+            <hr/>
             </div>
         </mat-card-content>
         <hr/>

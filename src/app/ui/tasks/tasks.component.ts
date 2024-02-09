@@ -5,10 +5,11 @@ import { MatCardModule } from '@angular/material/card';
 import { TaskFrequencyENUM, TaskModel, TaskTypeENUM, TimeEstimateENUM } from '../../shared/model/task.model';
 import {MatBadgeModule} from '@angular/material/badge';
 import { EditTaskComponent } from '../edit-task/edit-task.component';
+import { SingleTaskComponent } from '../single-task/single-task.component';
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [DatePipe, MatCardModule, AsyncPipe, CommonModule, NgFor, NgForOf, MatBadgeModule, EditTaskComponent],
+  imports: [DatePipe, MatCardModule, SingleTaskComponent, AsyncPipe, CommonModule, NgFor, NgForOf, MatBadgeModule, EditTaskComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.scss'
 })
@@ -30,6 +31,11 @@ export class TasksComponent {
   getStyle(item: TaskModel) {
     return (item.taskType).trim().toLowerCase();
   }
+
+  cameFromChild(data:TaskModel){
+    this.selectedItem = data;
+  }
+  
   showItemDetail(item:TaskModel){
     this.selectedItem = item;
   }

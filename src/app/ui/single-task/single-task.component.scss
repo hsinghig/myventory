@@ -1,23 +1,25 @@
-.task-parent-container{
-    background-color:aliceblue;
-    min-width: 200px;
-    min-height: 200px;
-  }
-  .card{
-    max-width: 400px;
-    min-width:400px;
-  }
-  .health{
+
+  .single-task-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    //align-items: center;
   }
   .myClass{ 
     font-size: 1.4em;
     color: green;  
     text-align: center;
   }
-  .walk{
-    color:#C62828;
+  .iconStyle {
+    font-size: 1.4rem;
+  }
+ 
+  .work,.job_search,.certifications,.interview_prep{
+    color: #C62828;
+  } 
+  .health, .miscellaneous {
+    color: green;
+  }
+  .self_improvement{
+    color:#4DD0E1;
   }

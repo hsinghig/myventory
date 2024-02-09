@@ -1,4 +1,5 @@
-<div class="health">
-    <span class="myClass material-symbols-outlined">health_and_safety</span>
-    <p matBadge="4" matBadgeSize="small"  matBadgeOverlap="false"><span class="walk">Walk 10K Steps everyday atleast</span></p>
+<div class="single-task-container" (click)="sendToParent()">   
+    <mat-icon class="iconstyle {{taskItem.taskType|lowercase}}">{{iconName}}</mat-icon>   
+    <p matBadge="{{taskItem.estimatedTime}}" matBadgeSize="small"
+      matBadgeOverlap="false"><span class="walk">{{taskItem.task}}</span></p>
 </div>

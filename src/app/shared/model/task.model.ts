@@ -38,6 +38,11 @@ export enum TaskStatusENUM{
     ABANDONED="ABANDONED",
     NO_MORE_REQUIRED="NO_MORE_REQUIRED"
 }
+export interface TaskTypeIconModel{
+    taskType:TaskTypeENUM;
+    iconName:string;
+    cssClass:string;
+}
 
 export enum TaskTypeENUM{
     WORK="WORK",
@@ -98,3 +103,46 @@ export const TaskStatusModelList: TaskStatusModel[] = [
         timePlanned: 4, timeActual:1
     }
 ];
+
+export const TaskTypeIconModelList: TaskTypeIconModel[] =[
+    {
+        taskType: TaskTypeENUM.CERTIFICATIONS,
+        iconName: 'approval',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.FAMILY,
+        iconName: 'group',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.HEALTH,
+        iconName: 'health_and_safety',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.INTERVIEW_PREP,
+        iconName: 'interpreter_mode',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.JOB_SEARCH,
+        iconName: 'pageview',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.MISCELLANEOUS,
+        iconName: 'sunny',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.SELF_IMPROVEMENT,
+        iconName: 'self_improvement',
+        cssClass: 'first-css'
+    },
+    {
+        taskType: TaskTypeENUM.WORK,
+        iconName: 'work',
+        cssClass: 'first-css'
+    },
+]
