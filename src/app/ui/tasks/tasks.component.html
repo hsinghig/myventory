@@ -1,22 +1,14 @@
-<p>tasks works!</p>
-
 <div class="container">
-    <mat-card class="my-card mat-elevation-z8">
-        <mat-card-header>
-          <mat-card-title>{{todayDate | date: 'dd/MM/yyyy'}}</mat-card-title>
-          <mat-card-subtitle>In Progress</mat-card-subtitle>
-        </mat-card-header>    
-        <hr/>   
-        <mat-card-content class="my-content mat-elevation-z8">
-           <div *ngFor="let item of taskList">
-            <app-single-task (sendBack)="cameFromChild($event)" [taskItem]="item"></app-single-task>
-            <hr/>
-            </div>
-        </mat-card-content>
-        <hr/>
-        <mat-card-footer>
-          <app-edit-task [taskItem]="selectedItem"></app-edit-task>
-        </mat-card-footer>
-      </mat-card>
-     
+  <mat-card class="my-card mat-elevation-z8">
+    <mat-card-content class="my-content mat-elevation-z8">
+      <div *ngFor="let item of taskList">
+        <app-single-task (sendBack)="cameFromChild($event)" [taskItem]="item"></app-single-task>
+        <hr />
+      </div>
+    </mat-card-content>
+    <hr />
+    <mat-card-footer>
+      <app-edit-task [taskItem]="selectedItem"></app-edit-task>
+    </mat-card-footer>
+  </mat-card>
 </div>

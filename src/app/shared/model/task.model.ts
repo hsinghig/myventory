@@ -60,7 +60,7 @@ export const TaskModelList: TaskModel[] =[
     endDate: '02/15/2024', frequency: TaskFrequencyENUM.DAILY, 
     taskType: TaskTypeENUM.SELF_IMPROVEMENT, estimatedTime:TimeEstimateENUM.ONE_HOUR,
     actualTime:0 }, 
-    {id:2, task:'Read 60 pages of certifications (showing intent)', startDate: '02/07/2024', 
+    {id:2, task:'Read 60 pages of certifications - Microsoft Azure (showing intent)', startDate: '02/07/2024', 
     endDate: '03/10/2024', frequency: TaskFrequencyENUM.DAILY, 
     taskType: TaskTypeENUM.CERTIFICATIONS, estimatedTime:TimeEstimateENUM.FOUR_HOUR,
     actualTime:0 }, 
@@ -79,6 +79,18 @@ export const TaskModelList: TaskModel[] =[
     {id:6, task:'Do Coding or Algorithm or Machine Learning or AI', startDate: '02/07/2024', 
     endDate: '04/10/2024', frequency: TaskFrequencyENUM.DAILY,
     taskType: TaskTypeENUM.INTERVIEW_PREP, estimatedTime:TimeEstimateENUM.TWO_HOUR,
+    actualTime:0 },
+    {id:6, task:'Microsoft Cloud Study', startDate: '02/15/2024', 
+    endDate: '04/10/2024', frequency: TaskFrequencyENUM.DAILY,
+    taskType: TaskTypeENUM.CERTIFICATIONS, estimatedTime:TimeEstimateENUM.FOUR_HOUR,
+    actualTime:0 },
+    {id:7, task:'Microsoft Cloud Study test logic future', startDate: '02/17/2024', 
+    endDate: '04/10/2024', frequency: TaskFrequencyENUM.DAILY,
+    taskType: TaskTypeENUM.CERTIFICATIONS, estimatedTime:TimeEstimateENUM.FOUR_HOUR,
+    actualTime:0 },
+    {id:8, task:'Microsoft Cloud Study test logic past', startDate: '02/07/2024', 
+    endDate: '02/10/2024', frequency: TaskFrequencyENUM.DAILY,
+    taskType: TaskTypeENUM.CERTIFICATIONS, estimatedTime:TimeEstimateENUM.FOUR_HOUR,
     actualTime:0 }
 ];
 

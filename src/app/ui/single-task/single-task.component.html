@@ -1,5 +1,9 @@
 <div class="single-task-container" (click)="sendToParent()">   
     <mat-icon class="iconstyle {{taskItem.taskType|lowercase}}">{{iconName}}</mat-icon>   
     <p matBadge="{{taskItem.estimatedTime}}" matBadgeSize="small"
-      matBadgeOverlap="false"><span class="walk">{{taskItem.task}}</span></p>
+      matBadgeOverlap="false"><span class="walk">{{taskItem.task}}</span>
+      <button mat-icon-button (click)="moveToStarted()" color="primary">
+        <mat-icon>forward</mat-icon>
+      </button>
+    </p>
 </div>

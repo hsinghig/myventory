@@ -1,0 +1,26 @@
+.parent-card-container{
+    display: flex;
+    flex-direction: column;    
+}
+.date-selected-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.small {
+    font-style: italic;
+}

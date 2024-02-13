@@ -1,0 +1,9 @@
+<div class="date-container">
+    <button mat-icon-button (click)="previousDate()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span class="dateDisplay">{{currentDate|date:'fullDate'}}</span>
+    <button mat-icon-button (click)="nextDate()">
+        <mat-icon>arrow_forward</mat-icon>
+    </button>
+</div>

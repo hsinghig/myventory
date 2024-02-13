@@ -1,0 +1,18 @@
+<ng-content select="app-card-header1"></ng-content>
+<div class="card">
+  <div class="card__image card__image--fence"></div>
+  <div class="card__content">
+    <div class="card__title">{{ title }}</div>
+
+    <!-- Content -->
+    <div class="card__content">
+      <ng-container *ngIf="carMainContent"
+       [ngTemplateOutlet]="carMainContent.template"></ng-container>
+    </div>
+    <!-- /Content -->
+
+    <!-- Footer -->
+    <ng-content *ngIf="carMainContent" select="app-card-footer"></ng-content>
+    <!-- /Footer -->
+  </div>
+</div>

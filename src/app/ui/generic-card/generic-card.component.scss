@@ -1,0 +1,23 @@
+.card-container{
+    max-width: 400px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+.card-header, .card-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: azure;
+    padding:1%;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    padding:1%;
+}

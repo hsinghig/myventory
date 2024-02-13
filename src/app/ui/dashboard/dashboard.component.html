@@ -1,11 +1,54 @@
-<p>dashboard works!</p>
-<div class="icon-container">
-    <p class="iconstyle"><mat-icon>health_and_safety</mat-icon>Health</p>
-    <p class="iconstyle"><mat-icon>approval</mat-icon>certifications</p>
-    <p class="iconstyle"><mat-icon>group</mat-icon> Family</p>
-    <p class="iconstyle"><mat-icon>interpreter_mode</mat-icon>InterviewPrep</p>
-    <p class="iconstyle"><mat-icon>pageview</mat-icon>Job Search</p>
-    <p class="iconstyle"><mat-icon>sunny</mat-icon>Miscellaneous</p>
-    <p class="iconstyle"><mat-icon>self_improvement</mat-icon>Self Improvement</p>
-    <p class="iconstyle"><mat-icon>work</mat-icon> Work</p>
+<div class="parent-card-container">
+  <div class="date-selected-container">
+    <app-date-task (dateSelected)="comingFromChild($event)"></app-date-task>
   </div>
+  
+<div class="card-container">
+  <app-generic-card>  
+    <div *appCardHeader>    
+      <p class="small">Not Started</p>
+    </div>  
+    <div *appCardMainContent>
+      <app-tasks></app-tasks>
+    </div>  
+    <div *appCardFooter>
+      This is the footer
+    </div>  
+  </app-generic-card>
+  <app-generic-card>  
+    <div *appCardHeader>    
+      <p class="small">In Progress</p>
+    </div>  
+    <div *appCardMainContent>
+      <app-tasks></app-tasks>
+    </div>  
+    <div *appCardFooter>
+      This is the footer
+    </div>  
+  </app-generic-card>
+  <app-generic-card>  
+    <div *appCardHeader>    
+      <p class="small">Completed</p>
+    </div>  
+    <div *appCardMainContent>
+      <app-tasks></app-tasks>
+    </div>  
+    <div *appCardFooter>
+      This is the footer
+    </div>  
+  </app-generic-card>
+ 
+</div>
+
+
+<div class="icon-container">
+  <p class="iconstyle"><mat-icon>health_and_safety</mat-icon>Health</p>
+  <p class="iconstyle"><mat-icon>approval</mat-icon>certifications</p>
+  <p class="iconstyle"><mat-icon>group</mat-icon> Family</p>
+  <p class="iconstyle"><mat-icon>interpreter_mode</mat-icon>InterviewPrep</p>
+  <p class="iconstyle"><mat-icon>pageview</mat-icon>Job Search</p>
+  <p class="iconstyle"><mat-icon>sunny</mat-icon>Miscellaneous</p>
+  <p class="iconstyle"><mat-icon>self_improvement</mat-icon>Self Improvement</p>
+  <p class="iconstyle"><mat-icon>work</mat-icon> Work</p>
+</div>
+</div>

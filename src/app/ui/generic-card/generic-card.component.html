@@ -1,5 +1,14 @@
 <div class="card-container">
-    <div class="card-header"></div>
-    <div class="card-content"></div>
-    <div class="card-footer"></div>
+    <div class="card-header">
+        <ng-container *ngIf="cardHeaderContent"
+         [ngTemplateOutlet]="cardHeaderContent.template"></ng-container>
+    </div>    
+    <div class="card-content">
+       <ng-container *ngIf="cardContent" 
+       [ngTemplateOutlet]="cardContent.template"></ng-container>
+    </div>
+    <div class="card-footer">
+        <ng-container *ngIf="cardFooterContent" 
+        [ngTemplateOutlet]="cardFooterContent.template"></ng-container>
+    </div>
 </div>

@@ -17,24 +17,28 @@ export class SingleTaskComponent implements OnInit, OnChanges{
   @Output() sendBack = new EventEmitter<TaskModel>();
 
   ngOnInit(): void { 
-    console.log(' in Single Task comp', this.taskItem.taskType)
+    //console.log(' in Single Task comp', this.taskItem.taskType)
     this.getIconName(this.taskItem.taskType);
   }
   
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('changes : ', changes, changes['taskItem'].currentValue.taskType);
+   // console.log('changes : ', changes, changes['taskItem'].currentValue.taskType);
     this.getIconName(changes['taskItem'].currentValue.taskType);
   }
 
   getIconName(value:TaskTypeENUM){
-    console.log('Value passed', value);    
+    //console.log('Value passed', value);    
     this.iconName = TaskTypeIconModelList.find(x => x.taskType === value)?.iconName;
     if (this.iconName == null){
       this.iconName = 'Could not find';
     }
-    console.log('iconName found : ', this.iconName);
+  //  console.log('iconName found : ', this.iconName);
   }
   sendToParent(){
     this.sendBack.emit(this.taskItem);
+  }
+
+  moveToStarted(){
+    
   }
 }
